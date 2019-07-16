@@ -1,0 +1,68 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.carousel {
+	position: relative;
+	z-index: 0;
+	height: 60vh;
+	width: 100%;
+	background-color: #333;
+}
+.slides-container {
+	overflow-x: hidden;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.slide {
+	width: 100%;
+	height: 100%;
+	left: 100%;
+	position: absolute;
+	transition: transform 0.5s;
+}
+#slide-1 {
+	background: url("img/adult-businessman-ceo-618613.jpg") no-repeat center top /
+		cover;
+}
+#slide-2 {
+	background: url("img/ballpen-blur-close-up-461077.jpg") no-repeat center top /
+		cover;
+}
+#slide-3 {
+	background: url("img/apartment-apartment-building-architecture-323705.jpg")
+		no-repeat center top / cover;
+}
+#slide-4 {
+	background: url("img/beach-calm-clouds-457882.jpg") no-repeat center top /
+		cover;
+}
+.circles {
+	z-index: 100;
+	position: absolute;
+	width: 300px;
+	height: 60px;
+	bottom: 0;
+	left: 50%;
+}
+.indicators {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin: 0 0.3rem;
+	border-radius: 50%;
+	background-color: rgba(182, 182, 182, 0.568);
+	cursor: pointer;
+}
+.blue {
+	transition: all 1s;
+	background-color: rgb(40, 126, 255);
+	border: 2px solid #fff;
+}
+.pull {
+	transition: transform 1s;
+	transform: translateX(-100%);
+}
